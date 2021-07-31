@@ -64,5 +64,15 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>We would like access your camera</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We would like access your location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We would like access your microphone</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>We would like access your  bluetooth</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We would like access your photo</string>
 </dict>
 </plist>
