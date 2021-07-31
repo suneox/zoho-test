@@ -1,4 +1,4 @@
-package com.auth0samples;
+package care.zoop.bewell;
 
 import com.facebook.react.ReactActivity;
 

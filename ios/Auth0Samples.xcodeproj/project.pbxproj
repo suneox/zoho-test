@@ -12,12 +12,12 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1B7B044348F6620E0D30DA2A /* libPods-Auth0Samples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 812282502E44214B67FBCCC3 /* libPods-Auth0Samples.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* Auth0SamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Auth0SamplesTests.m */; };
-		35FF2DFB666D3A64BE500666 /* libPods-Auth0Samples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F009A8E0FE990815B42B17 /* libPods-Auth0Samples.a */; };
-		74EBC5C5FC1F96E8AD6333B3 /* libPods-Auth0Samples-Auth0SamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D2CD82003B89DD883470BF /* libPods-Auth0Samples-Auth0SamplesTests.a */; };
+		3F35B5188865B09D6FDD839E /* libPods-Auth0Samples-Auth0SamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB0728087C7DAEB4914809C /* libPods-Auth0Samples-Auth0SamplesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Auth0Samples/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Auth0Samples-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auth0Samples-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Auth0Samples-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Auth0Samples-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40F009A8E0FE990815B42B17 /* libPods-Auth0Samples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth0Samples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6DE0318D4F3833C56F2B19 /* Pods-Auth0Samples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0Samples.debug.xcconfig"; path = "Target Support Files/Pods-Auth0Samples/Pods-Auth0Samples.debug.xcconfig"; sourceTree = "<group>"; };
-		66D2CD82003B89DD883470BF /* libPods-Auth0Samples-Auth0SamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth0Samples-Auth0SamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		812282502E44214B67FBCCC3 /* libPods-Auth0Samples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth0Samples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B37E689B56A34ED9688334 /* Pods-Auth0SamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0SamplesTests.debug.xcconfig"; path = "Target Support Files/Pods-Auth0SamplesTests/Pods-Auth0SamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB0728087C7DAEB4914809C /* libPods-Auth0Samples-Auth0SamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Auth0Samples-Auth0SamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD945658248EE64B004E1DC2 /* Auth0Samples-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Auth0Samples-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD4F3E0930AF58F7A3EC2909 /* Pods-Auth0SamplesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth0SamplesTests.release.xcconfig"; path = "Target Support Files/Pods-Auth0SamplesTests/Pods-Auth0SamplesTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74EBC5C5FC1F96E8AD6333B3 /* libPods-Auth0Samples-Auth0SamplesTests.a in Frameworks */,
+				3F35B5188865B09D6FDD839E /* libPods-Auth0Samples-Auth0SamplesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FF2DFB666D3A64BE500666 /* libPods-Auth0Samples.a in Frameworks */,
+				1B7B044348F6620E0D30DA2A /* libPods-Auth0Samples.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +148,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				40F009A8E0FE990815B42B17 /* libPods-Auth0Samples.a */,
-				66D2CD82003B89DD883470BF /* libPods-Auth0Samples-Auth0SamplesTests.a */,
+				812282502E44214B67FBCCC3 /* libPods-Auth0Samples.a */,
+				8CB0728087C7DAEB4914809C /* libPods-Auth0Samples-Auth0SamplesTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				9059A87E53BE339D33633E51 /* [CP] Copy Pods Resources */,
 				62BA7F4AA7700A004B3E69A2 /* [CP] Embed Pods Frameworks */,
+				AC2810643BF5EC8661E35DB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,8 +221,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				3A629BFB394C483FFDC97F8E /* [CP] Copy Pods Resources */,
 				87BCB072064625DCE704A46D /* [CP] Embed Pods Frameworks */,
+				411A19091F540A7E5B76CB70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,7 +382,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		3A629BFB394C483FFDC97F8E /* [CP] Copy Pods Resources */ = {
+		411A19091F540A7E5B76CB70 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -458,7 +458,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auth0Samples/Pods-Auth0Samples-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9059A87E53BE339D33633E51 /* [CP] Copy Pods Resources */ = {
+		AC2810643BF5EC8661E35DB3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -660,7 +660,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
+				PRODUCT_BUNDLE_IDENTIFIER = care.zoop.bewell;
 				PRODUCT_NAME = Auth0Samples;
 				SWIFT_OBJC_BRIDGING_HEADER = "Auth0Samples-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -684,7 +684,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
+				PRODUCT_BUNDLE_IDENTIFIER = care.zoop.bewell;
 				PRODUCT_NAME = Auth0Samples;
 				SWIFT_OBJC_BRIDGING_HEADER = "Auth0Samples-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -711,7 +711,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
+				PRODUCT_BUNDLE_IDENTIFIER = care.zoop.bewell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -738,7 +738,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auth0samples;
+				PRODUCT_BUNDLE_IDENTIFIER = care.zoop.bewell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;

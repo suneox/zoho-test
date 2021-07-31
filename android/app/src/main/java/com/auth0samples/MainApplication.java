@@ -1,4 +1,4 @@
-package com.auth0samples;
+package care.zoop.bewell;
 
 import android.app.Application;
 import android.content.Context;

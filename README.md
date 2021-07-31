@@ -45,8 +45,8 @@ The `applicationId` will get auto-completed dynamically.
 5. In the **Allowed Callback URLs** field, paste in the text below and replace `YOUR_DOMAIN` with the **Domain** from above. These URLs are required for the authentication result to be redirected from the browser to the app:
 
 ```
-com.auth0samples://YOUR_DOMAIN/ios/com.auth0samples/callback,
-com.auth0samples://YOUR_DOMAIN/android/com.auth0samples/callback
+care.zoop.bewell://YOUR_DOMAIN/ios/care.zoop.bewell/callback,
+care.zoop.bewell://YOUR_DOMAIN/android/care.zoop.bewell/callback
 ```
 
 6. Add the same values to the **Allowed Logout URLs** field as well. These are required for the browser to redirect back to the app after the user logs out.

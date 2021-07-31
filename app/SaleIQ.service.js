@@ -24,7 +24,7 @@ const init = () => {
       ZOHO_SALEIQ_ANDROID_ACCESS_KEY,
     );
   }
-  ZohoSalesIQ.setLauncherVisibility(true);
+  ZohoSalesIQ.setLauncherVisibility(false);
   ZohoSalesIQ.setLanguage('en');
   ZohoSalesIQ.setDepartment('bewell-test');
   ZohoSalesIQ.disablePreChatForms();
@@ -33,8 +33,34 @@ const init = () => {
   ZohoSalesIQ.showOperatorImageInChat(true);
 };
 
+const getOrFakeChatUserEmail = user => {
+  if (!user) {
+    return '';
+  }
+  return user.email || user.sub.replace('|', '.') + '@noreply.com';
+};
+
+const login = user => {
+  const visitorId = user.sub.replace('|', '.');
+  const email = getOrFakeChatUserEmail(user);
+  ZohoSalesIQ.setVisitorEmail(email);
+  ZohoSalesIQ.setVisitorName(user.name);
+  ZohoSalesIQ.setVisitorAddInfo('visitorId', visitorId);
+  ZohoSalesIQ.setVisitorAddInfo('email', email);
+  ZohoSalesIQ.registerVisitor(visitorId);
+  ZohoSalesIQ.setLauncherVisibility(true);
+  console.log('LOGIN SALEIQ SUCCESS', visitorId, email);
+};
+
+const logout = () => {
+  ZohoSalesIQ.unregisterVisitor();
+  ZohoSalesIQ.setLauncherVisibility(false);
+};
+
 const SaleIQService = {
   init,
+  login,
+  logout,
   openChat: ZohoSalesIQ.openChat,
 };
 
