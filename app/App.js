@@ -11,7 +11,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import Home from './Home';
-import SaleIQService from './SaleIQ.service';
+import SaleIQService from './services/SaleIQ.service';
 
 const Stack = createStackNavigator();
 
