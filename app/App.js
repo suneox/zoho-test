@@ -17,7 +17,7 @@ const Stack = createStackNavigator();
 
 const App = () => {
   useEffect(() => {
-    SaleIQService.init();
+    // SaleIQService.init();
   }, []);
 
   return (

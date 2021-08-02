@@ -8,22 +8,6 @@ import {
 import {Platform} from 'react-native';
 
 const init = () => {
-  console.log(ZohoSalesIQ);
-  if (Platform.OS === 'ios') {
-    ZohoSalesIQ.initWithCallback(
-      ZOHO_SALEIQ_IOS_APP_KEY,
-      ZOHO_SALEIQ_IOS_ACCESS_KEY,
-      () => {
-        console.log('INIT ZohoSalesIQ SUCCESSFUL');
-      },
-    );
-    ZohoSalesIQ.setThemeColorforiOS('#4545C6');
-  } else {
-    ZohoSalesIQ.init(
-      ZOHO_SALEIQ_ANDROID_APP_KEY,
-      ZOHO_SALEIQ_ANDROID_ACCESS_KEY,
-    );
-  }
   ZohoSalesIQ.setLauncherVisibility(false);
   ZohoSalesIQ.setLanguage('en');
   ZohoSalesIQ.setDepartment('bewell-test');
@@ -31,6 +15,27 @@ const init = () => {
   ZohoSalesIQ.disableScreenshotOption();
   ZohoSalesIQ.enableInAppNotification();
   ZohoSalesIQ.showOperatorImageInChat(true);
+  return new Promise(resolve => {
+    if (Platform.OS === 'ios') {
+      ZohoSalesIQ.initWithCallback(
+        ZOHO_SALEIQ_IOS_APP_KEY,
+        ZOHO_SALEIQ_IOS_ACCESS_KEY,
+        () => {
+          console.log('INIT ZohoSalesIQ SUCCESSFUL');
+          resolve(true);
+        },
+      );
+      ZohoSalesIQ.setThemeColorforiOS('#4545C6');
+    } else {
+      ZohoSalesIQ.initWithCallback(
+        ZOHO_SALEIQ_ANDROID_APP_KEY,
+        ZOHO_SALEIQ_ANDROID_ACCESS_KEY,
+        () => {
+          resolve(true);
+        },
+      );
+    }
+  });
 };
 
 const getOrFakeChatUserEmail = user => {
@@ -40,7 +45,8 @@ const getOrFakeChatUserEmail = user => {
   return user.email || user.sub.replace('|', '.') + '@noreply.com';
 };
 
-const login = user => {
+const login = async user => {
+  await init();
   const visitorId = user.sub.replace('|', '.');
   const email = getOrFakeChatUserEmail(user);
   ZohoSalesIQ.setVisitorEmail(email);
